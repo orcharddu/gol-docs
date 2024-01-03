@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'en-US',
   // base: "/gol-docs/",
-  title: "Game of life",
+  title: "CSA CW - Game of Life",
   description: "Computer System A Coursework - University of Bristol",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -30,6 +30,5 @@ export default defineConfig({
     search: {
       provider: 'local'
     }
-
-  },
+  }
 })
