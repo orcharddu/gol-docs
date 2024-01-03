@@ -5,7 +5,6 @@ layout: home
 hero:
   name: "Game of life"
   text: "Computer System A Coursework"
-  tagline: My great project tagline
   actions:
     - theme: brand
       text: Markdown Examples
