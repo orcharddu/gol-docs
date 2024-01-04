@@ -3,21 +3,25 @@ import { DefaultTheme, defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'en-US',
-  // base: "/gol-docs/",
+  base: "/",
   title: "CSA CW - Game of Life",
   description: "Computer System A Coursework - University of Bristol",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: nav(),
+    nav: [
+      { text: 'Home', link: '/', activeMatch: '^\/[^\/]*$|^\/?$' },
+      { text: 'Golang Coursework', link: '/golang/overview', activeMatch: '^\/golang\/.*$' },
+      { text: 'Rust Coursework', link: '/rust/overview', activeMatch: '^\/rust\/.*$' },
+    ],
 
     sidebar: {
-      '/' : { base: '/', items: home().concat(golangDocs()) },
-      '/golang/' : { base: '/', items: home().concat(golangDocs()) },
-      '/rust/' : { base: '/', items: home().concat(rustDocs()) }
+      '/' : { base: '/', items: homeDocs().concat(golangDocs()) },
+      '/golang/' : { base: '/', items: homeDocs().concat(golangDocs()) },
+      '/rust/' : { base: '/', items: homeDocs().concat(rustDocs()) }
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/orcharddu/gol-docs' }
     ],
 
     search: {
@@ -26,27 +30,7 @@ export default defineConfig({
   }
 })
 
-function nav(): DefaultTheme.NavItem[] {
-  return [
-    {
-      text: 'Home',
-      link: '/',
-      activeMatch: '^\/?$'
-    },
-    {
-      text: 'Golang Coursework',
-      link: 'golang/overview',
-      activeMatch: '/golang/'
-    },
-    {
-      text: 'Rust Coursework',
-      link: 'rust/overview',
-      activeMatch: '/rust/'
-    },
-  ]
-}
-
-function home(): DefaultTheme.SidebarItem[] {
+function homeDocs(): DefaultTheme.SidebarItem[] {
   return [
       {
       items: [
