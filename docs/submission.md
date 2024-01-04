@@ -1,6 +1,6 @@
 # Submission
 
-<div class="warning custom-block" style="padding: 15px; text-align: center; font-size: 15px;">
+<div class="warning custom-block" style="padding-top: 20px; padding-bottom: 20px; text-align: center; font-size: 1.05em;">
 <strong>Submission point is not available for now!</strong>
 </div>
 
@@ -10,14 +10,14 @@ Uncomment below when submission point is available.
 
 - For the report, you must submit a single file called `report.pdf`.
   
-  [**report submission point**](https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_8308812_1&course_id=_257215_1&group_id=&mode=cpview)
+  [**Report submission point**](https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_8308812_1&course_id=_257215_1&group_id=&mode=cpview)
 
 - For the parallel implementation, you must submit a single zip file called `parallel.zip`. It must contain all the code required to compile and run the program.
 
-  [**parallel submission point**](https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_8309899_1&course_id=_257215_1&group_id=&mode=cpview)
+  [**Parallel submission point**](https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_8309899_1&course_id=_257215_1&group_id=&mode=cpview)
 - For the distributed implementation, you must submit a single zip file called `distributed.zip`. It must contain all the code required to compile and run the program.
 
-  [**distributed submission point**](https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_8309900_1&course_id=_257215_1&group_id=&mode=cpview)
+  [**Distributed submission point**](https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_8309900_1&course_id=_257215_1&group_id=&mode=cpview)
 - If you have multiple versions, only submit the ones you wish us to check for correctness (one zip for parallel and one for distributed). Other versions may be shared via OneDrive with Sion, Pui and Michael.
 :::
 

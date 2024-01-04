@@ -15,9 +15,9 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/' : { base: '/', items: homeDocs().concat(golangDocs()) },
-      '/golang/' : { base: '/', items: homeDocs().concat(golangDocs()) },
-      '/rust/' : { base: '/', items: homeDocs().concat(rustDocs()) }
+      '/' : homeDocs().concat(golangDocs()) ,
+      '/golang/' : homeDocs().concat(golangDocs()) ,
+      '/rust/' : homeDocs().concat(rustDocs())
     },
 
     socialLinks: [
@@ -34,8 +34,8 @@ function homeDocs(): DefaultTheme.SidebarItem[] {
   return [
       {
       items: [
-        { text: 'Home', link: "index" },
-        { text: 'Submission', link: 'submission' },
+        { text: 'Home', link: "/" },
+        { text: 'Submission', link: '/submission' },
       ]
     },
   ]
@@ -44,21 +44,48 @@ function homeDocs(): DefaultTheme.SidebarItem[] {
 function golangDocs(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Golang Coursework',
+      text: 'Golang Guideline',
       items: [
-        { text: 'Overview', link: 'golang/overview' },
+        { text: 'Overview', link: '/golang/overview' },
+        { text: 'Parallel Implementation', collapsed: true, link: '/golang/parallel/', items: 
+          [
+            { text: 'Step 1', link: '/golang/parallel/step-1' },
+            { text: 'Step 2', link: '/golang/parallel/step-2' },
+            { text: 'Step 3', link: '/golang/parallel/step-3' },
+            { text: 'Step 4', link: '/golang/parallel/step-4' },
+            { text: 'Step 5', link: '/golang/parallel/step-5' },
+            { text: 'Success Criteria', link: '/golang/parallel/success-criteria' },
+            { text: 'In Your Report', link: '/golang/parallel/in-your-report' },
+          ]
+        },
+        { text: 'Distributed Implementation', collapsed: true, link: '/golang/distributed/', items: 
+          [
+            { text: 'Step 1', link: '/golang/distributed/step-1' },
+            { text: 'Step 2', link: '/golang/distributed/step-2' },
+            { text: 'Step 3', link: '/golang/distributed/step-3' },
+            { text: 'Step 4', link: '/golang/distributed/step-4' },
+            { text: 'Step 5', link: '/golang/distributed/step-5' },
+            { text: 'Step 6', link: '/golang/distributed/step-6' },
+            { text: 'Success Criteria', link: '/golang/distributed/success-criteria' },
+            { text: 'In Your Report', link: '/golang/distributed/in-your-report' },
+          ]
+        },
+        { text: 'Extensions', link: '/golang/extensions' },
+        { text: 'Report Guidance', link: '/golang/report-guidance' },
+        { text: 'Marking Scheme', link: '/golang/marking-scheme' },
+        { text: 'Viva', link: '/golang/viva' },
       ]
-    }
+    },
   ]
 }
 
 function rustDocs(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Rust Coursework',
+      text: 'Rust Guideline',
       items: [
-        { text: 'Overview', link: 'rust/overview' },
-        { text: 'Setup Guide', link: 'rust/setup-guide' },
+        { text: 'Overview', link: '/rust/overview' },
+        { text: 'Setup Guide', link: '/rust/setup-guide' },
       ]
     }
   ]

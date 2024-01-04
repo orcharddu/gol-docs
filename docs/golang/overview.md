@@ -1,5 +1,10 @@
 # Task Overview
 
+<div class="warning custom-block" style="padding: 15px; font-size: 0.9em;">
+This is the guideline for the <strong>Golang</strong> version coursework;
+for Rust guideline, click <a href="/rust/overview">here</a>.
+</div>
+
 ## Introduction
 
 The British mathematician John Horton Conway devised a cellular automaton named ‘The Game of Life’.

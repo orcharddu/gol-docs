@@ -73,14 +73,15 @@ sudo apt-get install libsdl2-dev
 
 :::
 
-::: tip For macOS users
-macOS users need to export library from homebrew, add the following line to the end of `~/.zshrc`
+::: warning For macOS users
+macOS users need to export library path from homebrew, add the following line to the end of `~/.zshrc`.
+(you can edit `~/.zshrc` by typing `nano ~/.zshrc` in the terminal)
 
 <div class="info custom-block" style="padding-top: 10px">
 export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
 </div>
 
-then type in terminal
+then type the following in the terminal
 
 ``` bash
 source ~/.zshrc
