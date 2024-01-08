@@ -3,7 +3,7 @@
 
 ## Step 1
 
-Implement the Game of Life logic as it was described in the task introduction.
+Implement the Game of Life logic as it was described in the [task introduction](../overview#introduction).
 
 We suggest starting with a single-threaded implementation that will serve as a starting point in subsequent steps.
 

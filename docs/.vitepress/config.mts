@@ -15,9 +15,9 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/' : homeDocs().concat(golangDocs()) ,
-      '/golang/' : homeDocs().concat(golangDocs()) ,
-      '/rust/' : homeDocs().concat(rustDocs())
+      '/': homeDocs().concat(golangDocs()),
+      '/golang/': homeDocs().concat(golangDocs()),
+      '/rust/': homeDocs().concat(rustDocs())
     },
 
     socialLinks: [
@@ -32,7 +32,7 @@ export default defineConfig({
 
 function homeDocs(): DefaultTheme.SidebarItem[] {
   return [
-      {
+    {
       items: [
         { text: 'Home', link: "/" },
         { text: 'Submission', link: '/submission' },
@@ -47,7 +47,7 @@ function golangDocs(): DefaultTheme.SidebarItem[] {
       text: 'Golang Guideline',
       items: [
         { text: 'Overview', link: '/golang/overview' },
-        { text: 'Parallel Implementation', collapsed: true, link: '/golang/parallel/', items: 
+        { text: 'Parallel Implementation', collapsed: true, link: '/golang/parallel/', items:
           [
             { text: 'Step 1', link: '/golang/parallel/step-1' },
             { text: 'Step 2', link: '/golang/parallel/step-2' },
@@ -58,7 +58,7 @@ function golangDocs(): DefaultTheme.SidebarItem[] {
             { text: 'In Your Report', link: '/golang/parallel/in-your-report' },
           ]
         },
-        { text: 'Distributed Implementation', collapsed: true, link: '/golang/distributed/', items: 
+        { text: 'Distributed Implementation', collapsed: true, link: '/golang/distributed/', items:
           [
             { text: 'Step 1', link: '/golang/distributed/step-1' },
             { text: 'Step 2', link: '/golang/distributed/step-2' },
@@ -86,6 +86,18 @@ function rustDocs(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Overview', link: '/rust/overview' },
         { text: 'Setup Guide', link: '/rust/setup-guide' },
+        { text: 'Parallel Implementation', collapsed: true, link: '/rust/parallel/', items:
+          [
+            { text: 'Walk Through', link: '/rust/parallel/walk-through' },
+            { text: 'Step 1', link: '/rust/parallel/step-1' },
+            { text: 'Step 2', link: '/rust/parallel/step-2' },
+            { text: 'Step 3', link: '/rust/parallel/step-3' },
+            { text: 'Step 4', link: '/rust/parallel/step-4' },
+            { text: 'Step 5', link: '/rust/parallel/step-5' },
+            { text: 'Success Criteria', link: '/rust/parallel/success-criteria' },
+            { text: 'In Your Report', link: '/rust/parallel/in-your-report' },
+          ]
+        },
       ]
     }
   ]

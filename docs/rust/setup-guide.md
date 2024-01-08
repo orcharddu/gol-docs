@@ -27,7 +27,7 @@ choose `SDL2-devel-2.x.x-VC.zip`.
     C:\Users\{Your Username}\.rustup\toolchains\x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib
     </div>
 - Copy `SDL2.dll` from
-    <div class="info custom-block" style="padding-top: 10px">
+  <div class="info custom-block" style="padding-top: 10px">
     SDL2-devel-2.x.x-VC\SDL2-2.x.x\lib\x64\
     </div>
     to the root inside the `gol-rs-skeleton` folder.
@@ -56,6 +56,10 @@ Choose `Proceed with installation (default)`
 ### Install SDL2 Library
 
 Type the following in the terminal to install SDL2.
+
+::: tip For lab machines
+SDL2 should already be installed and working on school's linux lab machines
+:::
 
 ::: code-group
 

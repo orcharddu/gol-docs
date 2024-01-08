@@ -12,7 +12,6 @@ Now using a ticker, report the number of cells that are still alive *every 2 sec
 To report the count use the `AliveCellsCount` event. Also send the `TurnComplete` event after each complete iteration.
 
 To test your code, type the following in the terminal.
-You can use tracing to verify the correct number of workers was used this time.
 
 ``` bash
 go test -v -run=TestAlive

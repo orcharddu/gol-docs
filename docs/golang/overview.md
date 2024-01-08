@@ -25,7 +25,7 @@ At each matrix update in time the following transitions may occur to create the 
 - any dead cell with exactly three live neighbours becomes alive
 :::
 
-::: tip NOTE on image connectivity
+::: tip NOTE on image edge
 Consider the image to be on a closed domain
 (pixels on the top row are connected to pixels at the bottom row, pixels on the right are connected to pixels on the left and vice versa).
 :::

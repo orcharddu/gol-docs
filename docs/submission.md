@@ -1,10 +1,10 @@
 # Submission
 
-<div class="warning custom-block" style="padding-top: 20px; padding-bottom: 20px; text-align: center; font-size: 1.05em;">
+<!-- <div class="warning custom-block" style="padding-top: 20px; padding-bottom: 20px; text-align: center; font-size: 1.05em;">
 <strong>Submission point is not available for now!</strong>
 </div>
 
-Uncomment below when submission point is available.
+Uncomment below when submission point is available. -->
 
 ::: tip NOTE on submission
 

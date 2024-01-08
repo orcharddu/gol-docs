@@ -5,6 +5,15 @@ This is the guideline for the <strong>Rust</strong> version coursework;
 for Golang guideline, click <a href="/golang/overview">here</a>.
 </div>
 
+::: danger Writing this coursework in Rust is **OPTIONAL**
+
+You do not need to write any Rust code unless you are willing to complete this coursework with Rust.
+
+Generally speaking, Rust is considered more challenging than Golang. However, writing asynchronous Rust may provide you with a deeper understanding of concurrency.
+
+Considering your time, we recommend choosing only one version of the coursework; please avoid doing both unless you intend to include a comparison in your report.
+:::
+
 ## Introduction
 
 The British mathematician John Horton Conway devised a cellular automaton named ‘The Game of Life’.
@@ -25,7 +34,7 @@ At each matrix update in time the following transitions may occur to create the 
 - any dead cell with exactly three live neighbours becomes alive
 :::
 
-::: tip NOTE on image connectivity
+::: tip NOTE on image edge
 Consider the image to be on a closed domain
 (pixels on the top row are connected to pixels at the bottom row, pixels on the right are connected to pixels on the left and vice versa).
 :::
@@ -42,24 +51,13 @@ To help you along, you are given a simple skeleton project.
 
 The skeleton includes tests and an SDL-based visualiser.
 
-All parts of the skeleton are commented. All the code has been written in Go.
+All parts of the skeleton are commented. All the code has been written in Rust.
 
-You will not be required to write any C code. If you have any questions about the skeleton please ask a TA for help.
+You will not be required to write any C or Golang code. If you have any questions about the skeleton please ask a TA for help.
 
 ::: warning
 You **must not** modify any of the files ending in `_test.rs`. We will be using these tests to judge the correctness of your implementation.
 :::
-
-The skeleton code uses SDL.
-This is a basic graphics library which you already used in Imperative Programming unit.
-
-To install the library follow the following instructions:
-
-- **Linux Lab Machines** - SDL should already be installed and working.
-- **Personal Ubuntu PCs** - `sudo apt install libsdl2-dev`
-- **MacOS** - `brew install sdl2` or use the official [`.dmg` installer](https://www.libsdl.org/download-2.0.php).
-- **Windows** - Use Ubuntu with WSL2. See our [guide](https://github.com/UoB-CSA/setup-guides/blob/master/go-install/windows.md).
-- **Other** - Consult the [official documentation](https://wiki.libsdl.org/Installation).
 
 ## Submission
 
