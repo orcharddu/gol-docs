@@ -9,12 +9,12 @@ Now using a ticker, report the number of cells that are still alive *every 2 sec
 
 To report the count use the `AliveCellsCount` event. Also send the `TurnComplete` event after each complete iteration.
 
-::: tip Asynchronous programming
+::: tip Concurrency with asynchronous programming
 At this point, if your distributor is still a blocking function, you might create a dedicated thread to send event periodically.
 
 However, you may realise using a dedicated thread for doing this easy task is a performance overhead.
 
-You are not **REQUIRED** to implement this step using asynchronous programming, however, if you want to acheive concurrency this way, you can choose:
+You are ***NOT*** required to complete this step using asynchronous Rust, however, if you want to acheive concurrency this way, you can choose:
 
 - Change your distributor to an async function, and use `tokio::spwan()` to create a tokio task for sending AliveCellCount events periodically.
 

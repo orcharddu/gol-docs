@@ -66,7 +66,7 @@ as they are more likely to yield better performance.
 
 :::
 
-::: tip About native OS threads
+::: tip NOTE on native OS threads
 Compared to `goroutines` or `tokio tasks`, creating and destroying native OS threads have greater performance overhead.
 
 It is advisable to minimise the frequency of native threads creation and destruction in your implementation,
@@ -77,7 +77,7 @@ particularly by avoiding such operations in every iteration (turn).
 In other parts of skeleton, `tokio::sync::mpsc::channel` is widely used, where `MPSC` stands for **multi-producer single-consumer**, meaning the channel can have only ***one*** receiver.
 
 In contrast, Golang channels can have multiple receivers and are referred to as `MPMC` (multi-producer multi-consumer).
-If your parallel design requires *multiple* receivers, consider using the channel provided by [flume](https://crates.io/crates/flume),
+If your parallel design requires ***multiple*** receivers, consider using the channel provided by [flume](https://crates.io/crates/flume),
 which behaves similarly to a Golang channel but faster.
 
 An MPMC channel could be very useful when you are implementing somethings like work-stealing.

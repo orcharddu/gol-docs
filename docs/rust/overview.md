@@ -7,7 +7,7 @@ for Golang guideline, click <a href="/golang/overview">here</a>.
 
 ::: danger Writing this coursework in Rust is **OPTIONAL**
 
-You do not need to write any Rust code unless you are willing to complete this coursework with Rust.
+You are ***NOT*** required to write any Rust code unless you are willing to complete this coursework with Rust.
 
 Generally speaking, Rust is considered more challenging than Golang. However, writing asynchronous Rust may provide you with a deeper understanding of concurrency.
 

@@ -19,7 +19,7 @@ Note that the running SDL provides you with a channel containing the relevant ke
   If `p` is pressed again resume the processing and print `"Continuing"`.\
   **It is necessary for `q` and `s` to work while the execution is paused.**
 
-::: tip Selecting channels
+::: tip NOTE on selecting channels
 You might need something similar to golang's `select` statement, the `select!` macro.
 
 ``` rust
@@ -46,6 +46,7 @@ loop {
 ```
 
 :::
+
 To test the visualisation and control rules, type the following in the terminal.
 
 ``` bash
