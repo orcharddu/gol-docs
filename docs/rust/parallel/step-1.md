@@ -25,7 +25,7 @@ The diagram below shows how they should interact with each other.
 
 ![Step 1](/assets/cw_diagrams-Parallel_1.png)
 
-::: warning TODO: Complete the structs!
+::: tip TODO:
 Note that not all channels linking IO and the Distributor have been initialised for you.\
 You will need to create them and add them to the `io_channels` and `distributor_channels` structs.\
 These structs are created in `src/gol/mod.rs`.
@@ -66,7 +66,7 @@ The functions `read_pgm_image()` and `start_io()` are particularly important in 
 
 Your Game of Life code will interact with the user or the unit tests using the `events` channel.
 All events are defined in the file `src/gol/event.rs`.
-In this step, you will only be working with the unit test `TestGol`.
+In this step, you will only be working with the unit test `gol_test.rs`.
 Therefore, you only need to send the `FinalTurnComplete` event.
 
 ### Test
@@ -74,5 +74,5 @@ Therefore, you only need to send the `FinalTurnComplete` event.
 To test your serial, single-threaded code, type the following in the terminal, all the tests ran should pass.
 
 ``` bash
-cargo test --release --test gol_test
+cargo test --release --test gol -- --threads 1
 ```

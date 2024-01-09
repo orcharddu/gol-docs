@@ -5,7 +5,7 @@ This is the guideline for the <strong>Rust</strong> version coursework;
 for Golang guideline, click <a href="/golang/overview">here</a>.
 </div>
 
-::: danger Writing this coursework in Rust is **OPTIONAL**
+::: info Writing this coursework in Rust is **OPTIONAL**
 
 You are ***NOT*** required to write any Rust code unless you are willing to complete this coursework with Rust.
 
