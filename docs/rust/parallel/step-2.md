@@ -95,5 +95,5 @@ allowing you to specify how many threads Rayon should use.
 To test your code, type the following in the terminal.
 
 ``` bash
-cargo test --release --test gol_test
+cargo test --release --test gol
 ```

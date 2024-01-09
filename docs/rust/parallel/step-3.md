@@ -7,7 +7,7 @@
 
 Now using a ticker, report the number of cells that are still alive *every 2 seconds*.
 
-To report the count use the `AliveCellsCount` event. Also send the `TurnComplete` event after each complete iteration.
+To report the count by sending the `AliveCellsCount` event. Also send the `TurnComplete` event after each complete iteration.
 
 ::: tip Concurrency with asynchronous programming
 At this point, if your distributor is still a blocking function, you might create a dedicated thread to send event periodically.
@@ -56,5 +56,5 @@ loop {
 To test your code, type the following in the terminal.
 
 ``` bash
-cargo test --release --test count_test
+cargo test --release --test count
 ```
