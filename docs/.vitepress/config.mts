@@ -98,6 +98,18 @@ function rustDocs(): DefaultTheme.SidebarItem[] {
             { text: 'In Your Report', link: '/rust/parallel/in-your-report' },
           ]
         },
+        { text: 'Distributed Implementation', collapsed: true, link: '/rust/distributed/', items:
+          [
+            { text: 'Step 1', link: '/rust/distributed/step-1' },
+            { text: 'Step 2', link: '/rust/distributed/step-2' },
+            { text: 'Step 3', link: '/rust/distributed/step-3' },
+            { text: 'Step 4', link: '/rust/distributed/step-4' },
+            { text: 'Step 5', link: '/rust/distributed/step-5' },
+            { text: 'Step 6', link: '/rust/distributed/step-6' },
+            { text: 'Success Criteria', link: '/rust/distributed/success-criteria' },
+            { text: 'In Your Report', link: '/rust/distributed/in-your-report' },
+          ]
+        },
       ]
     }
   ]
