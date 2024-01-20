@@ -21,7 +21,7 @@ tokio::task::spawn_blocking(move || distributor(params, distributor_channels)); 
 start_io(params, io_channels).await;
 ```
 
-Currently, `distributor(...)` is blocking called, designed to make it easier for you to write a single-threaded implementation.
+Currently, `distributor(...)` is blockingly called, designed to make it easier for you to write a single-threaded implementation.
 
 However, at this stage, you can decide whether the `distributor(...)` function should be async or blocking, depending on your implementation.
 
