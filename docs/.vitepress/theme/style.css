@@ -269,3 +269,7 @@
   backdrop-filter: saturate(100%) blur(10px);
   z-index: -1;
 }
+
+blockquote p {
+  font-size: 0.85em !important;
+}
