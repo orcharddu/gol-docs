@@ -110,6 +110,10 @@ function rustDocs(): DefaultTheme.SidebarItem[] {
             { text: 'In Your Report', link: '/rust/distributed/in-your-report' },
           ]
         },
+        { text: 'Extensions', link: '/rust/extensions' },
+        { text: 'Report Guidance', link: '/rust/report-guidance' },
+        { text: 'Marking Scheme', link: '/rust/marking-scheme' },
+        { text: 'Viva', link: '/rust/viva' },
       ]
     }
   ]
