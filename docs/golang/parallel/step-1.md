@@ -39,5 +39,5 @@ Therefore, you only need to send the `FinalTurnComplete` event.
 To test your serial, single-threaded code, type the following in the terminal, all the tests ran should pass.
 
 ``` bash
-go test -v -run=TestGol/-1$
+go test -v -run TestGol/-1$
 ```

@@ -8,13 +8,12 @@ You should be able to test your serial code using `go test -v -run=TestGol/-1$` 
 
 ![Step 1](/assets/cw_diagrams-Distributed_1.png)
 
-::: tip Separate your implementation into two components:
+Separate your implementation into two components:
 
 - The local controller, will be responsible for IO and capturing keypresses.
 - The Gol Engine, will be responsible for actually processing the turns of Game of Life.
 
 You must be able to run the local controller as a client on a local machine, and the Gol engine as a server on an AWS node.
-:::
 
 Start by implementing a basic controller which can tell the logic engine to evolve Game of Life for the number of turns specified in `gol.Params.Turns`.
 You can achieve this by implementing a single, blocking RPC call to process all requested turns.
@@ -22,5 +21,5 @@ You can achieve this by implementing a single, blocking RPC call to process all 
 To test your implementation, type the following in the terminal of your **local controller**.
 
 ```bash
-go test -v -run=TestGol/-1$
+go test -v -run TestGol/-1$
 ```

@@ -10,11 +10,5 @@ Implement logic to output the state of the board after all turns have completed 
 To test your code, type the following in the terminal.
 
 ``` bash
-go test -v -run=TestPgm
-```
-
-Finally, type the following in the terminal to make sure all tests are passing.
-
-``` bash
-go test -v
+go test -v -run TestPgm
 ```

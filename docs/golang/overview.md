@@ -17,18 +17,13 @@ Every cell interacts with its eight neighbour pixels: cells that are horizontall
 
 At each matrix update in time the following transitions may occur to create the next evolution of the domain:
 
-::: tip NOTE on rules
-
 - any live cell with fewer than two live neighbours dies
 - any live cell with two or three live neighbours is unaffected
 - any live cell with more than three live neighbours dies
 - any dead cell with exactly three live neighbours becomes alive
-:::
 
-::: tip NOTE on image edge
 Consider the image to be on a closed domain
 (pixels on the top row are connected to pixels at the bottom row, pixels on the right are connected to pixels on the left and vice versa).
-:::
 
 A user can only interact with the Game of Life by creating an initial configuration and observing how it evolves.
 
@@ -46,7 +41,7 @@ All parts of the skeleton are commented. All the code has been written in Go.
 
 You will not be required to write any C code. If you have any questions about the skeleton please ask a TA for help.
 
-::: warning
+::: warning Please notice
 You **must not** modify any of the files ending in `_test.go`. We will be using these tests to judge the correctness of your implementation.
 :::
 
@@ -71,7 +66,7 @@ Every student is required to upload their full work to Blackboard.
 
 There will be three separate submissions points on Blackboard - one for the report and two for each implementation.
 
-::: tip NOTE on submission
+::: tip Note on submission
 
 - For the report, you must submit a single file called `report.pdf`.
 
@@ -82,15 +77,15 @@ There will be three separate submissions points on Blackboard - one for the repo
 - If you have multiple versions, only submit the ones you wish us to check for correctness (one zip for parallel and one for distributed). Other versions may be shared via OneDrive with Sion, Pui and Michael.
 :::
 
-::: warning
+::: warning Please notice
 
 - Submitting different filenames or file formats (e.g. `.docx`, `.tex`, `.7z` or `.rar`) will result in a mark penalty.
 - **Each team member** has to upload an **identical copy** of the team's work.
 - Make sure you submit it early (not last minute!) to avoid upload problems.
+- Make sure your team member’s names and user names appear on page 1 of the report.\
+**Do not include a cover page.**
 :::
 
-::: info
 You should be using `Git` for version control, however, please don't include your `.git` directory in your submission.
 
-You can generate a correct archive using the command `git archive -o [FILENAME].zip HEAD`.
-:::
+You can generate a correct archive by typing `git archive -o [FILENAME].zip HEAD`.

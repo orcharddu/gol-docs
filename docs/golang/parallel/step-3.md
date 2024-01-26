@@ -14,5 +14,5 @@ To report the count use the `AliveCellsCount` event. Also send the `TurnComplete
 To test your code, type the following in the terminal.
 
 ``` bash
-go test -v -run=TestAlive
+go test -v -run TestAlive
 ```

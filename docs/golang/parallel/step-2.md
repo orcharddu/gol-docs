@@ -11,13 +11,11 @@ You should implement a distributor that tasks different worker threads to operat
 
 The number of worker threads you should create is specified in `gol.Params.Threads`.
 
-::: tip NOTE
 You are free to design your system as you see fit, however, we encourage you to primarily use channels.
-:::
 
 To test your code, type the following in the terminal.
 You can use tracing to verify the correct number of workers was used this time.
 
 ``` bash
-go test -v -run=TestGol
+go test -v -run TestGol
 ```
