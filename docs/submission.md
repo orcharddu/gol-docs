@@ -6,7 +6,7 @@
 
 Uncomment below when submission point is available. -->
 
-::: tip NOTE on submission
+::: tip Note on submission
 
 - For the report, you must submit a single file called `report.pdf`.
   
@@ -21,9 +21,11 @@ Uncomment below when submission point is available. -->
 - If you have multiple versions, only submit the ones you wish us to check for correctness (one zip for parallel and one for distributed). Other versions may be shared via OneDrive with Sion, Pui and Michael.
 :::
 
-::: warning
+::: warning Please notice
 
 - Submitting different filenames or file formats (e.g. `.docx`, `.tex`, `.7z` or `.rar`) will result in a mark penalty.
 - **Each team member** has to upload an **identical copy** of the team's work.
 - Make sure you submit it early (not last minute!) to avoid upload problems.
+- Make sure your team member’s names and user names appear on page 1 of the report.\
+**Do not include a cover page.**
 :::
