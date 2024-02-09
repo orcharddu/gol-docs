@@ -9,7 +9,7 @@ You will need to utilise `CellFlipped` and `TurnComplete` events to achieve this
 Look at `src/sdl/loop.rs` for details.
 
 <div class="info custom-block" style="padding: 10px; font-size: 0.85em;">
-<em><strong>NOTE:</strong>
+<em><strong>Note:</strong>
 Don't forget to send <code>CellFlipped</code> events for every initially alive cells before processing any turns.
 </em></div>
 
@@ -18,13 +18,13 @@ Note that the running SDL provides you with a channel containing the relevant ke
 
 - If `s` is pressed, save the current state of the board as a PGM image.
     <div class="info custom-block" style="padding: 10px; font-size: 0.85em;">
-    <em><strong>NOTE:</strong>
-    Never forget to send an <code>ImageOutputComplete</code> event after any PGM image is saved.
+    <em><strong>Note:</strong>
+    Don't forget to send an <code>ImageOutputComplete</code> event after any PGM image is saved.
     </em></div>
 
 - If `q` is pressed, stop executing Gol computation, save the current state of the board as a PGM image, then terminate the program.
     <div class="info custom-block" style="padding: 10px; font-size: 0.85em;">
-    <em><strong>NOTE:</strong>
+    <em><strong>Note:</strong>
     Your distributor should behave as following after <code>q</code> is pressed:<br>
     Complete current turn and send a <code>TurnComplete</code> event ->
     Send a <code>FinalTurnComplete</code> event ->
@@ -35,11 +35,11 @@ Note that the running SDL provides you with a channel containing the relevant ke
 - If `p` is pressed, pause the processing and send a `StateChange` event.\
   If `p` is pressed again, resume the processing and send a `StateChange` event.
     <div class="info custom-block" style="padding: 10px; font-size: 0.85em;">
-    <em><strong>NOTE:</strong>
+    <em><strong>Note:</strong>
     It is <strong>necessary</strong> for <code>q</code> and <code>s</code> to work while the execution is paused.
     </em></div>
 
-::: tip NOTE on selecting channels
+::: tip Note on selecting channels
 You might need something similar to golang's `select` statement, the `select!` macro.
 
 ``` rust
@@ -69,9 +69,17 @@ loop {
 
 To test the visualisation and control rules, type the following in the terminal.
 
-``` bash
+::: code-group
+
+``` bash [Test with SDL window]
+cargo test --release --test sdl -- sdl
+```
+
+``` bash [Test without SDL window]
 cargo test --release --test sdl
 ```
+
+:::
 
 You can also run the program and test the visualisation and control rules manually by typing the following in the terminal.
 

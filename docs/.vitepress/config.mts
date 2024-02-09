@@ -11,7 +11,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/', activeMatch: '^\/[^\/]*$|^\/?$' },
       { text: 'Golang Coursework', link: '/golang/overview', activeMatch: '^\/golang\/.*$' },
-      { text: 'Rust Coursework', link: '/rust/overview', activeMatch: '^\/rust\/.*$' },
+      { text: 'Rust Extension', link: '/rust/overview', activeMatch: '^\/rust\/.*$' },
     ],
 
     sidebar: {

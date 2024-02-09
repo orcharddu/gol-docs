@@ -11,7 +11,7 @@ You should implement a distributor that tasks different worker threads to operat
 
 The number of worker **threads** you should create is specified in struct `Params`.
 
-::: tip NOTE on `distributor` function
+::: tip Note on `distributor` function
 <!-- You are free to design your system as you see fit, however, we encourage you to primarily use channels. -->
 You might be noticed how `distributor` functions is called.
 
@@ -66,7 +66,7 @@ as they are more likely to yield better performance.
 
 :::
 
-::: tip NOTE on native OS threads
+::: tip Note on native OS threads
 Compared to `goroutines` or `tokio tasks`, creating and destroying native OS threads have greater performance overhead.
 
 It is advisable to minimise the frequency of native threads creation and destruction in your implementation,
