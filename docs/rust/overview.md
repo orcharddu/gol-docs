@@ -1,8 +1,8 @@
 # Task Overview
 
 <div class="warning custom-block" style="padding: 15px; font-size: 0.9em;">
-This is the guideline for the <strong>Rust</strong> version coursework;
-for Golang guideline, click <a href="/golang/overview">here</a>.
+This is the guide for the <strong>Rust</strong> version coursework;
+for Golang guide, click <a href="/golang/overview">here</a>.
 </div>
 
 ::: info Writing this coursework in Rust is **OPTIONAL**

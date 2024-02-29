@@ -44,7 +44,7 @@ function homeDocs(): DefaultTheme.SidebarItem[] {
 function golangDocs(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Golang Guideline',
+      text: 'Golang Guide',
       items: [
         { text: 'Overview', link: '/golang/overview' },
         { text: 'Parallel Implementation', collapsed: true, link: '/golang/parallel/', items:
@@ -82,7 +82,7 @@ function golangDocs(): DefaultTheme.SidebarItem[] {
 function rustDocs(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Rust Guideline',
+      text: 'Rust Guide',
       items: [
         { text: 'Overview', link: '/rust/overview' },
         { text: 'Setup Guide', link: '/rust/setup-guide' },
