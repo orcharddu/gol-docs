@@ -37,7 +37,7 @@ To test the visualisation and control rules, type the following in the terminal.
 ::: code-group
 
 ``` bash [Test with SDL window]
-go test -v -run TestSdl --sdl
+go test -v -run TestSdl -sdl
 ```
 
 ``` bash [Test without SDL window]

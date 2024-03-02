@@ -4,7 +4,7 @@ import { DefaultTheme, defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'en-US',
   base: "/",
-  title: "CSA CW - Game of Life",
+  title: "CSA - Game of Life",
   description: "Computer System A Coursework - University of Bristol",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -20,7 +20,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/orcharddu/gol-docs' }
+      { icon: 'github', link: 'https://github.com/UoB-CSA/gol-skeleton' }
     ],
 
     search: {
@@ -72,10 +72,8 @@ function golangDocs(): DefaultTheme.SidebarItem[] {
 
         // Comment out the following code to hide rust extension
         // -------Starting from here-------
-        { text: 'Rust Extension',
-          collapsed: true,
-          link: '/rust/overview',
-          items: [
+        { text: 'Rust Extension', collapsed: true, link: '/rust/overview', items: 
+          [
             { text: 'Overview', link: '/rust/overview' },
             { text: 'Setup Guide', link: '/rust/setup-guide' },
             { text: 'Parallel Implementation', collapsed: true, link: '/rust/parallel/', items:
@@ -104,7 +102,7 @@ function golangDocs(): DefaultTheme.SidebarItem[] {
             }
           ]
         },
-        // -------End-------
+        // -------End comment-------
         { text: 'Report Guidance', link: '/golang/report-guidance' },
         { text: 'Marking Scheme', link: '/golang/marking-scheme' },
         { text: 'Viva', link: '/golang/viva' },

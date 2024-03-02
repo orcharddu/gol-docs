@@ -1,10 +1,5 @@
 # Task Overview
 
-<div class="warning custom-block" style="padding: 15px; font-size: 0.9em;">
-This is the guide for the <strong>Golang</strong> version coursework;
-for Rust guide, click <a href="/rust/overview">here</a>.
-</div>
-
 ## Introduction
 
 The British mathematician John Horton Conway devised a cellular automaton named ‘The Game of Life’.
@@ -34,6 +29,8 @@ Your task is to design and implement programs which simulate the Game of Life on
 ## Skeleton Code
 
 To help you along, you are given a simple skeleton project.
+
+Starting by cloning [gol-skeleton](https://github.com/UoB-CSA/gol-skeleton) repository, you can create your own repository by `Use this template`. Remember to set your newly created repository to private and add your partner as collaborator.
 
 The skeleton includes tests and an SDL-based visualiser.
 

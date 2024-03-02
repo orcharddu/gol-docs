@@ -1,87 +1,26 @@
-# Task Overview
+# Rust Extension Overview
 
-<div class="warning custom-block" style="padding: 15px; font-size: 0.9em;">
-This is the guide for the <strong>Rust</strong> version coursework;
-for Golang guide, click <a href="/golang/overview">here</a>.
-</div>
+::: warning Writing this coursework in Rust is an extension and is **OPTIONAL**
 
-::: info Writing this coursework in Rust is **OPTIONAL**
+You are ***NOT*** required to write any Rust code unless you intend to complete this coursework with Rust.
 
-You are ***NOT*** required to write any Rust code unless you are willing to complete this coursework with Rust.
+This is an extension, which means **you should complete this coursework in Golang before considering the Rust extension**.
 
-Generally speaking, Rust is considered more challenging than Golang. However, writing asynchronous Rust may provide you with a deeper understanding of concurrency.
-
-Considering your time, we recommend choosing only one version of the coursework; please avoid doing both unless you intend to include a comparison in your report.
+Talk to the lecturers before you start working on this Rust extension.
 :::
-
-## Introduction
-
-The British mathematician John Horton Conway devised a cellular automaton named ‘The Game of Life’.
-
-The game resides on a 2-valued 2D matrix, i.e. a binary image, where the cells can either be ‘alive’ (pixel value 255 - white) or ‘dead’ (pixel value 0 - black).
-
-The game evolution is determined by its initial state and requires no further input.
-
-Every cell interacts with its eight neighbour pixels: cells that are horizontally, vertically, or diagonally adjacent.
-
-At each matrix update in time the following transitions may occur to create the next evolution of the domain:
-
-- any live cell with fewer than two live neighbours dies
-- any live cell with two or three live neighbours is unaffected
-- any live cell with more than three live neighbours dies
-- any dead cell with exactly three live neighbours becomes alive
-
-Consider the image to be on a closed domain
-(pixels on the top row are connected to pixels at the bottom row, pixels on the right are connected to pixels on the left and vice versa).
-
-A user can only interact with the Game of Life by creating an initial configuration and observing how it evolves.
-
-Note that evolving such complex, deterministic systems is an important application of scientific computing, often making use of parallel architectures and concurrent programs running on large computing farms.
-
-Your task is to design and implement programs which simulate the Game of Life on an image matrix.
 
 ## Skeleton Code
 
 To help you along, you are given a simple skeleton project.
 
+Starting by cloning [gol-rs-skeleton](https://github.com/UoB-CSA/gol-rs-skeleton) repository, you can create your own repository by `Use this template`. Remember to set your newly created repository to private and add your partner as collaborator.
+
 The skeleton includes tests and an SDL-based visualiser.
 
 All parts of the skeleton are commented. All the code has been written in Rust.
 
-You will not be required to write any C or Golang code. If you have any questions about the skeleton please ask a TA for help.
+You will not be required to write any C or Golang code for this extension. If you have any questions about the skeleton please ask a TA for help.
 
 ::: warning
 You **must not** modify any of the files ending in `_test.rs`. We will be using these tests to judge the correctness of your implementation.
 :::
-
-## Submission
-
-The coursework requires two independent implementations - parallel and distributed.
-
-You will be required to submit **both** implementations (assuming both were attempted).
-
-Every student is required to upload their full work to Blackboard.
-
-There will be three separate submissions points on Blackboard - one for the report and two for each implementation.
-
-::: tip Note on submission
-
-- For the report, you must submit a single file called `report.pdf`.
-
-- For the parallel implementation, you must submit a single zip file called `parallel.zip`. It must contain all the code required to compile and run the program.
-
-- For the distributed implementation, you must submit a single zip file called `distributed.zip`. It must contain all the code required to compile and run the program.
-
-- If you have multiple versions, only submit the ones you wish us to check for correctness (one zip for parallel and one for distributed). Other versions may be shared via OneDrive with Sion, Pui and Michael.
-:::
-
-::: warning
-
-- Submitting different filenames or file formats (e.g. `.docx`, `.tex`, `.7z` or `.rar`) will result in a mark penalty.
-- **Each team member** has to upload an **identical copy** of the team's work.
-- Make sure you submit it early (not last minute!) to avoid upload problems.
-:::
-
-You should be using `Git` for version control, however, please don't include your `.git` directory in your submission.
-
-You can generate a correct archive by typing `git archive -o [FILENAME].zip HEAD`.

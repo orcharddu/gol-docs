@@ -4,7 +4,7 @@
 ## Step 1
 
 Begin by ensuring you have a working single-threaded, single-machine implementation.
-You should be able to test your serial code using `go test -v -run=TestGol/-1$` and all tests should pass.
+You should be able to test your serial code using `go test -v -run TestGol/-1$` and all tests should pass.
 
 ![Step 1](/assets/cw_diagrams-Distributed_1.png)
 
