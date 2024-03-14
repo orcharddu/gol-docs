@@ -22,9 +22,9 @@ These structs are created in `gol/gol.go`.
 ### IO
 
 You are not able to call methods directly on the IO goroutine.
-To use the IO, you will need to utilise channel communication.
-For reading in the initial PGM image, you will need the `command`, `filename` and `input` channels.
-Look at the file `gol/io.go` for details.
+To use the IO, you will need to utilise channel communication.\
+To read the initial PGM image, you will need the `command`, `filename` and `input` channels.
+Look at the file `gol/io.go` for their implementation details.\
 The functions `io.readPgmImage` and `startIo` are particularly important in this step.
 
 ### Events

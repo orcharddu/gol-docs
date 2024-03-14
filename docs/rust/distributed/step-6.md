@@ -11,9 +11,7 @@ This allows the "Local Controller" to start the game by calling the main "Broker
 Likewise, the "Broker" connects to the "Gol workers".
 It is then able to give them slices of the game world and ask them to return the result of iterating on it.
 
-::: tip Note
-It is fine to have the Broker and Local Controller running on the same machine to get around firewall / port forwarding issues
-:::
+It is fine to have the Broker and Local Controller running on the same machine to get around firewall / port forwarding issues.
 
 ::: info Largest Image
 We created a [5120x5120 pgm file](http://seis.bristol.ac.uk/~sh1670/5120x5120.pgm) if you wish to test or benchmark your solution with a very large image.

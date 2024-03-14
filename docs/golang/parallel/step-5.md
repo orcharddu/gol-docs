@@ -6,7 +6,7 @@
 Implement logic to visualise the state of the game using SDL.
 
 You will need to utilise `CellFlipped`, `CellsFlipped` and `TurnComplete` events to achieve this.
-Check out `sdl/event.go` and `sdl/loop.go` for details.
+Check out `gol/event.go` and `sdl/loop.go` for details.
 
 > *Don't forget to send `Cell(s)Flipped` events for every initially alive cells before processing any turns.*
 >

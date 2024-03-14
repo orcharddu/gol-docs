@@ -72,7 +72,7 @@ function golangDocs(): DefaultTheme.SidebarItem[] {
 
         // Comment out the following code to hide rust extension
         // -------Starting from here-------
-        { text: 'Rust Extension', collapsed: true, link: '/rust/overview', items: 
+        { text: 'Rust Extension', collapsed: true, items: 
           [
             { text: 'Overview', link: '/rust/overview' },
             { text: 'Setup Guide', link: '/rust/setup-guide' },

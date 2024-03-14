@@ -10,7 +10,7 @@ Finally, the local controller should be able to manage the behaviour of the Gol 
 - If `s` is pressed, the controller should generate a PGM file with the current state of the board.
 
 - If `q` is pressed, close the controller client program without causing an error on the Gol server.
-    ::: tip TIP on behaviour of new controller connected
+    ::: info Behaviour of new controller connected
     A new controller should be able to take over interaction with the Gol engine.\
     Note that you are free to define the nature of how a new controller can take over interaction.
     Most likely the state will be reset.\

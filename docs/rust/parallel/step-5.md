@@ -5,41 +5,33 @@
 
 Implement logic to visualise the state of the game using SDL.
 
-You will need to utilise `CellFlipped` and `TurnComplete` events to achieve this.
-Look at `src/sdl/loop.rs` for details.
+You will need to utilise `CellFlipped`, `CellsFlipped` and `TurnComplete` events to achieve this.
+Check out `src/gol/event.rs` and `src/sdl/loop.rs` for details.
 
-<div class="info custom-block" style="padding: 10px; font-size: 0.85em;">
-<em><strong>Note:</strong>
-Don't forget to send <code>CellFlipped</code> events for every initially alive cells before processing any turns.
-</em></div>
+> *Don't forget to send `Cell(s)Flipped` events for every initially alive cells before processing any turns.*
+>
+> *You can collect many flipped cells to a vector and send `CellsFlipped` at a time instead of sending `CellFlipped` for every flipped cell.
+> You can send many times of `CellsFlipped` event in a turn, i.e., each worker could send `CellsFlipped`.
+> Please be careful not to send `CellFlipped` and `CellsFlipped` at the same time, as they may conflict (flipped twice == not flipped).*
 
 Also, implement the following control rules.
 Note that the running SDL provides you with a channel containing the relevant keypresses.
 
 - If `s` is pressed, save the current state of the board as a PGM image.
-    <div class="info custom-block" style="padding: 10px; font-size: 0.85em;">
-    <em><strong>Note:</strong>
-    Don't forget to send an <code>ImageOutputComplete</code> event after any PGM image is saved.
-    </em></div>
-
+    > ***NOTE:** Don't forget to send an `ImageOutputComplete` event after a PGM image is saved.*
 - If `q` is pressed, stop executing Gol computation, save the current state of the board as a PGM image, then terminate the program.
-    <div class="info custom-block" style="padding: 10px; font-size: 0.85em;">
-    <em><strong>Note:</strong>
-    Your distributor should behave as following after <code>q</code> is pressed:<br>
-    Complete current turn and send a <code>TurnComplete</code> event ->
-    Send a <code>FinalTurnComplete</code> event ->
-    Save the final state as PGM image and send an <code>ImageOutputComplete</code> event ->
-    Send a <code>StateChange</code> event and terminate
-    </em></div>
-
+    > ***NOTE:** Your distributor should behave as following after `q` is pressed:
+    > \
+    > Complete current turn and send a `TurnComplete` event ->
+    > Send a `FinalTurnComplete` event ->
+    > Save the final state as PGM image and send an `ImageOutputComplete` event ->
+    > Send a `StateChange` event and terminate.*
 - If `p` is pressed, pause the processing and send a `StateChange` event.\
   If `p` is pressed again, resume the processing and send a `StateChange` event.
-    <div class="info custom-block" style="padding: 10px; font-size: 0.85em;">
-    <em><strong>Note:</strong>
-    It is <strong>necessary</strong> for <code>q</code> and <code>s</code> to work while the execution is paused.
-    </em></div>
+    > ***NOTE:**
+    > It is **necessary** for `q` and `s` to work while the execution is paused.*
 
-::: tip Note on selecting channels
+::: details The `select!` macro
 You might need something similar to golang's `select` statement, the `select!` macro.
 
 ``` rust
@@ -67,6 +59,7 @@ loop {
 
 :::
 
+\
 To test the visualisation and control rules, type the following in the terminal.
 
 ::: code-group

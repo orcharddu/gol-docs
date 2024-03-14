@@ -3,7 +3,7 @@
 
 ## Success Criteria
 
-- Pass all test cases under `gol_test`, `count_test` and `pgm_test`.
+- Pass all test cases under `gol_test`, `count_test`, `pgm_test` and `sdl_test`.
 - Use the correct number of workers as requested in struct `Params`.
 - Display the live progress of the game using SDL.
 - Ensure that all keyboard control rules work correctly.

@@ -20,12 +20,11 @@ pub struct Params {
 }
 ```
 
-The skeleton code starts two tokio task (coroutine).
+The skeleton code starts two async tasks (coroutines).
 The diagram below shows how they should interact with each other.
 
 ![Step 1](/assets/cw_diagrams-Parallel_1.png)
 
-::: tip TODO:
 Note that not all channels linking IO and the Distributor have been initialised for you.\
 You will need to create them and add them to the `io_channels` and `distributor_channels` structs.\
 These structs are created in `src/gol/mod.rs`.
@@ -50,8 +49,6 @@ let distributor_channels = DistributorChannels {
 };
 ```
 
-:::
-
 Then move on to `src/gol/distributor.rs`, this will be the main entrance you start writing your Gol implementation.
 
 ### IO
@@ -60,7 +57,7 @@ You are not able to call methods directly on the IO coroutine.
 To use the IO, you will need to utilise channel communication.\
 To read the initial PGM image, you will need the `command`, `filename` and `input` channels.
 Look at the file `src/gol/io.rs` for their implementation details.\
-The functions `read_pgm_image()` and `start_io()` are particularly important in this step.
+The functions `read_pgm_image` and `start_io` are particularly important in this step.
 
 ### Events
 
