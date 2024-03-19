@@ -11,7 +11,7 @@ To report the count by sending the `AliveCellsCount` event. Also send the `TurnC
 
 ::: details Concurrency with asynchronous programming
 
-At this point, if your distributor is still a blocking function, you might create a dedicated thread to send `AliveCellsCount` event periodically.
+You might create a dedicated thread to send `AliveCellsCount` event periodically.
 
 However, you may realise using a dedicated thread for doing this easy task is heavy.
 
