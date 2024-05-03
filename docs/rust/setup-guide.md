@@ -53,6 +53,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 Choose `Proceed with installation (default)`
 
+You may also need to install compiler toolchain for Linux, type
+
+```bash
+sudo apt update
+sudo apt install build-essential
+```
+
 ### Install SDL2 Library
 
 Type the following in the terminal to install SDL2.
