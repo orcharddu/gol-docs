@@ -1,4 +1,4 @@
-# Walk Through
+# Before Start
 
 ## Learning materials
 
@@ -7,7 +7,7 @@
   This book is for Rust beginners, the part of asynchronous Rust is in [Async Book](https://rust-lang.github.io/async-book/index.html).
 - [Programming Rust](https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/) by Jim Blandy, Jason Orendorff, Leonora F. S. Tindall
   \
-  This book is friendly to Rust beginners, recommended.
+  This book is friendly to Rust beginners.
 
 - [Rust for Rustaceans](https://rust-for-rustaceans.com/) by Jon Gjengset
   \

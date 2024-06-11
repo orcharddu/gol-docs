@@ -8,7 +8,11 @@ export default defineConfig({
   description: "Computer System A Coursework - University of Bristol",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    
+
+    editLink: {
+      pattern: 'https://github.com/orcharddu/gol-docs/edit/master/docs/:path'
+    },
+
     // nav: [
     //   { text: 'Home', link: '/', activeMatch: '^\/[^\/]*$|^\/?$' },
     //   { text: 'Golang Coursework', link: '/golang/overview', activeMatch: '^\/golang\/.*$' },
@@ -72,13 +76,13 @@ function golangDocs(): DefaultTheme.SidebarItem[] {
 
         // Comment out the following code to hide rust extension
         // -------Starting from here-------
-        { text: 'Rust Extension', collapsed: true, items: 
+        { text: 'Rust Extension', collapsed: true, items:
           [
             { text: 'Overview', link: '/rust/overview' },
             { text: 'Setup Guide', link: '/rust/setup-guide' },
+            { text: 'Before Start', link: '/rust/before-start' },
             { text: 'Parallel Implementation', collapsed: true, link: '/rust/parallel/', items:
               [
-                { text: 'Walk Through', link: '/rust/parallel/walk-through' },
                 { text: 'Step 1', link: '/rust/parallel/step-1' },
                 { text: 'Step 2', link: '/rust/parallel/step-2' },
                 { text: 'Step 3', link: '/rust/parallel/step-3' },

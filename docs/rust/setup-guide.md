@@ -102,9 +102,8 @@ source ~/.zshrc
 
 ## Choose an IDE / Editor
 
-|   IDE / Editor      |     License      |          |
-| ------------- | ----------- | :-----------: |
-| [VSCode](https://code.visualstudio.com/) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)      | Free | Recommended |
-| [RustRover](https://www.jetbrains.com/rust/)      | Education License | Recommended |
-| [Fleet](https://www.jetbrains.com/fleet/) |   Free   |  |
-| [Intellij](https://www.jetbrains.com/idea/) + [rust-plugin](https://plugins.jetbrains.com/plugin/8182--deprecated-rust) | Free | Deprecated |
+|   IDE / Editor      |
+| ------------- |
+| [RustRover by Jetbrains](https://www.jetbrains.com/rust/) |
+| [VSCode](https://code.visualstudio.com/) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)      |
+| [Fleet by Jetbrains](https://www.jetbrains.com/fleet/) |
