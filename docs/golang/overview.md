@@ -38,8 +38,8 @@ All parts of the skeleton are commented. All the code has been written in Go.
 
 You will not be required to write any C code. If you have any questions about the skeleton please ask a TA for help.
 
-::: warning Please notice
-You **must not** modify any of the files ending in `_test.go`. We will be using these tests to judge the correctness of your implementation.
+::: warning Please note:
+You **must not** modify any of the files ending in `_test.go`. We will be using these tests to judge the correctness of your implementation. We will undo any changes you make to them.
 :::
 
 The skeleton code uses SDL.
@@ -49,7 +49,7 @@ To install the library follow the following instructions:
 
 - **Linux Lab Machines** - SDL should already be installed and working.
 - **Personal Ubuntu PCs** - `sudo apt install libsdl2-dev`
-- **MacOS** - `brew install sdl2` or use the official [`.dmg` installer](https://www.libsdl.org/download-2.0.php).
+- **MacOS** - Use [Homebrew](https://brew.sh/) `brew install sdl2` or use the official [`.dmg` installer](https://www.libsdl.org/download-2.0.php).
 - **Windows** - Use Ubuntu with WSL2. See our [guide](https://github.com/UoB-CSA/setup-guides/blob/master/go-install/windows.md).
 - **Other** - Consult the [official documentation](https://wiki.libsdl.org/Installation).
 
@@ -63,18 +63,18 @@ Every student is required to upload their full work to Blackboard.
 
 There will be three separate submissions points on Blackboard - one for the report and two for each implementation.
 
-::: tip Note on submission
+::: tip Note on submission:
 
 - For the report, you must submit a single file called `report.pdf`.
 
-- For the parallel implementation, you must submit a single zip file called `parallel.zip`. It must contain all the code required to compile and run the program.
+- For the parallel implementation, you must submit a single zip file called `parallel.zip`. It must contain all the code required to compile and run the program. Submit a complete copy of the skeleton, **not just the `gol` folder**.
 
 - For the distributed implementation, you must submit a single zip file called `distributed.zip`. It must contain all the code required to compile and run the program.
 
 - If you have multiple versions, only submit the ones you wish us to check for correctness (one zip for parallel and one for distributed). Other versions may be shared via OneDrive with Sion, Pui and Michael.
 :::
 
-::: warning Please notice
+::: warning Please note:
 
 - Submitting different filenames or file formats (e.g. `.docx`, `.tex`, `.7z` or `.rar`) will result in a mark penalty.
 - **Each team member** has to upload an **identical copy** of the team's work.
