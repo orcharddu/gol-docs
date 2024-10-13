@@ -13,7 +13,7 @@ To report the count use the `AliveCellsCount` event.
 
 ### Test
 
-To test your code, type the following in the terminal.
+To test your implementation, type the following in the terminal.
 
 ``` bash
 go test -v -run TestAlive

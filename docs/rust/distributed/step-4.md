@@ -26,8 +26,14 @@ If `p` is pressed again resume the processing and have the controller print `Con
 
 ### Test
 
-To test your implementation, type the following in the terminal of your **local controller**.
+To run the program and test the control rules manually, type the following in the terminal of your **local controller**.
 
-```bash
+``` bash
 cargo run --release
+```
+
+To specify server address, type (127.0.0.1:8030 in this case)
+
+``` bash
+cargo run --release -- --server_addr "127.0.0.1:8030"
 ```

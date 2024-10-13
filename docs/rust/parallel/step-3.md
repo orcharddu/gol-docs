@@ -121,7 +121,7 @@ and use `mutex.blocking_lock()` in *blocking* context.
 
 ### Test
 
-To test your code, type the following in the terminal.
+To test your implementation, type the following in the terminal.
 
 ``` bash
 cargo test --release --test count

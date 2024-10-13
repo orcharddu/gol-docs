@@ -75,7 +75,7 @@ Flume is a multi-producer, multi-consumer (MPMC) channel that functions similarl
 
 ### Test
 
-To test your serial, single-threaded code, type the following in the terminal, all the tests ran should pass.
+To test your serial, single-threaded implementation, type the following in the terminal, all the tests ran should pass.
 
 ``` bash
 cargo test --release --test gol -- --threads 1

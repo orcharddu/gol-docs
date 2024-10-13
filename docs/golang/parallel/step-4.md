@@ -11,7 +11,7 @@ The output logic is very similar to the input logic from Step 1. Again, look at 
 
 ### Test
 
-To test your code, type the following in the terminal.
+To test your implementation, type the following in the terminal.
 
 ``` bash
 go test -v -run TestPgm

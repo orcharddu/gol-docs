@@ -22,6 +22,6 @@ You can achieve this by implementing a single, blocking RPC call to process all 
 
 To test your implementation, type the following in the terminal of your **local controller**.
 
-```bash
+``` bash
 go test -v -run TestGol/-1$
 ```

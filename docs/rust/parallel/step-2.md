@@ -28,7 +28,7 @@ allowing you to specify how many threads rayon should use.
 
 ### Test
 
-To test your code, type the following in the terminal.
+To test your implementation, type the following in the terminal.
 
 ``` bash
 cargo test --release --test gol

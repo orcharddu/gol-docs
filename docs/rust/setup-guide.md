@@ -6,7 +6,7 @@
 
 To install Rust on WSL2, Linux or macOS, type the following in the terminal, then follow the on-screen instructions to install Rust.
 
-```bash
+``` bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
@@ -14,7 +14,7 @@ Choose `Proceed with installation (default)`
 
 For WSL2 / Linux: You may also need to install compiler toolchain, type
 
-```bash
+``` bash
 sudo apt update
 sudo apt install build-essential
 ```
@@ -25,15 +25,15 @@ Type the following in the terminal to install SDL2.
 
 ::: code-group
 
-```bash [WSL2]
+``` bash [WSL2]
 sudo apt install libsdl2-dev
 ```
 
-```bash [Ubuntu]
+``` bash [Ubuntu]
 sudo apt install libsdl2-dev
 ```
 
-```bash [macOS]
+``` bash [macOS]
 brew install sdl2
 ```
 

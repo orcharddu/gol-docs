@@ -13,15 +13,15 @@ To install protobuf, type
 
 ::: code-group
 
-```bash [WSL2]
+``` bash [WSL2]
 sudo apt install protobuf-compiler
 ```
 
-```bash [Ubuntu]
+``` bash [Ubuntu]
 sudo apt install protobuf-compiler
 ```
 
-```bash [macOS]
+``` bash [macOS]
 brew install protobuf
 ```
 
@@ -36,7 +36,7 @@ Add `C:\Program Files\protoc-xxx-win64\bin` to your **path** environment variabl
 
 To check if protobuf compiler is working, type
 
-```bash
+``` bash
 protoc --version
 ```
 

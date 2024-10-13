@@ -15,6 +15,6 @@ The controller should then send an `AliveCellsCount` event to the `events` chann
 
 To test your implementation, type the following in the terminal of your **local controller**.
 
-```bash
+``` bash
 cargo test --release --test count
 ```

@@ -26,8 +26,8 @@ If `p` is pressed again resume the processing and have the controller print `Con
 
 ### Test
 
-To test your implementation, type the following in the terminal of your **local controller**.
+To run the program and test the control rules manually, type the following in the terminal of your **local controller**.
 
-```bash
+``` bash
 go run .
 ```
