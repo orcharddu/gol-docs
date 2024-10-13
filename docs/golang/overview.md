@@ -42,6 +42,10 @@ You will not be required to write any C code. If you have any questions about th
 You **must not** modify any of the files ending in `_test.go`. We will be using these tests to judge the correctness of your implementation. We will undo any changes you make to them.
 :::
 
+::: warning For WSL2 users
+If you are using WSL2, ensure your skeleton is located within the WSL2 file system. Specifically, **your project should be located at `~/.../gol-skeleton`, NOT at `/mnt/.../gol-skeleton`**
+:::
+
 The skeleton code uses SDL.
 This is a basic graphics library which you already used in Imperative Programming unit.
 

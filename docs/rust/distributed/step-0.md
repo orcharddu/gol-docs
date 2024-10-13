@@ -55,7 +55,7 @@ If you are using `git clone`, switch to the `distributed` branch by typing `git 
 If you are using `Use this template`, please check `Include all branches` and switch to the `distributed` branch as well.
 :::
 
-::: tip For WSL2 users
+::: warning For WSL2 users
 If you are using WSL2, ensure your skeleton is located within the WSL2 file system. Specifically, **your project should be located at `~/.../gol-rs-skeleton`, NOT at `/mnt/.../gol-rs-skeleton`**
 :::
 
