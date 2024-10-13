@@ -13,11 +13,11 @@ export default defineConfig({
       pattern: 'https://github.com/orcharddu/gol-docs/edit/master/docs/:path'
     },
 
-    // nav: [
-    //   { text: 'Home', link: '/', activeMatch: '^\/[^\/]*$|^\/?$' },
-    //   { text: 'Golang Coursework', link: '/golang/overview', activeMatch: '^\/golang\/.*$' },
-    //   { text: 'Rust Extension', link: '/rust/overview', activeMatch: '^\/rust\/.*$' },
-    // ],
+    nav: [
+      { text: 'Home', link: '/', activeMatch: '^\/[^\/]*$|^\/?$' },
+      { text: 'Golang Coursework', link: '/golang/overview', activeMatch: '^\/golang\/.*$' },
+      { text: 'Rust Extension', link: '/rust/overview', activeMatch: '^\/rust\/.*$' },
+    ],
 
     sidebar: {
       '/': homeDocs().concat(golangDocs()),
