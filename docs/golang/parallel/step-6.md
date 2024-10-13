@@ -41,8 +41,8 @@ You can also run the program and view the visualisation by typing the following 
 go run .
 ```
 
-Finally, type the following in the terminal to make sure all tests are passing.
+Finally, type the following in the terminal to make sure all tests are passing with race detector.
 
 ``` bash
-go test -v
+go test -v -race
 ```

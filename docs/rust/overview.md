@@ -21,7 +21,7 @@ All parts of the skeleton are commented. All the code has been written in Rust.
 
 You will not be required to write any C or Golang code for this extension. If you have any questions about the skeleton please ask a TA for help.
 
-::: warning Please note:
+::: warning Please note
 You **must not** modify any of the files ending in `_test.rs`. We will be using these tests to judge the correctness of your implementation.
 :::
 
