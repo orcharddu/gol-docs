@@ -11,6 +11,8 @@ Send an `ImageOutputComplete` event after the PGM image is saved.
 
 To test your code, type the following in the terminal.
 
+### Test
+
 ``` bash
 cargo test --release --test pgm
 ```
