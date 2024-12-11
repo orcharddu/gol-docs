@@ -6,7 +6,8 @@ it is worth 80% of the unit mark.
 It is to be completed in your programming pairs.
 You must report any change to your pairing to the unit director *before* starting your coursework.
 
-It runs over 4 weeks (5 weeks including the reading week).
+It runs over 4 weeks.
+
 ::: warning Note on deadline
 The deadline for submitting all your work is **TBD**
 :::
