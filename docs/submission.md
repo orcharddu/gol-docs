@@ -1,7 +1,5 @@
 # Submission
 
-::: tip Note on submission
-
 The coursework requires two independent implementations - parallel and distributed.
 
 You will be required to submit **both** implementations (assuming both were attempted).
@@ -9,6 +7,8 @@ You will be required to submit **both** implementations (assuming both were atte
 Every student is required to upload their full work to Blackboard.
 
 There will be three separate submissions points on Blackboard - one for the report and two for each implementation.
+
+::: tip Note on submission
 
 - For the report, you must submit a single file called `report.pdf`, strictly max 6 pages.
 

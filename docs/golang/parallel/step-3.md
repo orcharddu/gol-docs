@@ -11,14 +11,6 @@ Now using a ticker, report the number of cells that are still alive *every 2 sec
 
 To report the count use the `AliveCellsCount` event.
 
-### Test
-
-To test your implementation, type the following in the terminal.
-
-``` bash
-go test -v -run TestAlive
-```
-
 ### Run your implementation
 
 When running your implementation, you will get the average Game of Life iteration turns per second (Avg turns/s).
@@ -34,9 +26,17 @@ To stop the program, press CTRL+C **twice** in the terminal.
 go run . -headless -t 4
 ```
 
-The `-headless` argument disables the SDL visualiser for this run, as we haven't implemented it yet.
-\
-The `-t` argument stands for the number of threads passed to `gol.Params.Threads` for this run; you can specify this number yourself.
+> The `-headless` argument disables the SDL visualiser for this run, as we haven't implemented it yet.
+>
+> The `-t` argument stands for the number of threads passed to `gol.Params.Threads` for this run; you can specify this number yourself.
+
+### Test
+
+To test your implementation, type the following in the terminal.
+
+``` bash
+go test -v -run TestAlive
+```
 
 ### Troubleshooting
 
