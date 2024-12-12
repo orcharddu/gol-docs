@@ -13,11 +13,11 @@ export default defineConfig({
       pattern: 'https://github.com/orcharddu/gol-docs/edit/master/docs/:path'
     },
 
-    nav: [
-      { text: 'Home', link: '/', activeMatch: '^\/[^\/]*$|^\/?$' },
-      { text: 'Golang Coursework', link: '/golang/overview', activeMatch: '^\/golang\/.*$' },
-      { text: 'Rust Extension', link: '/rust/overview', activeMatch: '^\/rust\/.*$' },
-    ],
+    // nav: [
+    //   { text: 'Home', link: '/', activeMatch: '^\/[^\/]*$|^\/?$' },
+    //   { text: 'Golang Coursework', link: '/golang/overview', activeMatch: '^\/golang\/.*$' },
+    //   { text: 'Rust Extension', link: '/rust/overview', activeMatch: '^\/rust\/.*$' },
+    // ],
 
     sidebar: {
       '/': homeDocs().concat(golangDocs()),
@@ -77,7 +77,7 @@ function golangDocs(): DefaultTheme.SidebarItem[] {
 
         // Comment out the following code to hide rust extension
         // -------Starting from here-------
-        { text: 'Rust Extension', collapsed: true, items:
+        { text: 'Extensions - Rust language', collapsed: true, items:
           [
             { text: 'Overview', link: '/rust/overview' },
             { text: 'Setup Guide', link: '/rust/setup-guide' },
