@@ -7,7 +7,7 @@
 ## Parallel Implementation report, more details
 
 - Discuss the goroutines you used and how they work together: this is **not** just your workers!
-Refer to [step 5](parallel/step-5#step-5)
+Refer to [step 5](/golang/parallel/step-5#step-5)
 of the task description as a starting point
 
 - Explain and analyse the benchmark results obtained.
@@ -40,7 +40,7 @@ For example, a pure channels implementation which does not use shared memory.
 
 - Discuss the system design and reasons for any decisions made.
 Consider using a diagram to aid your discussion.
-Once again refer to the [diagrams](distributed/step-1.md)
+Once again refer to the [diagrams](/golang/distributed/step-1.md)
 provided in the task description as a starting point.
 
 - Explain what data is sent over the network, when, and why it is necessary.

@@ -16,7 +16,7 @@ To report the count use the `AliveCellsCount` event.
 When running your implementation, you will get the average Game of Life iteration turns per second (Avg turns/s).
 
 You can use this data to evaluate your performance and compare it with your various implementations. However, we do not recommend directly using this data in your report.
-**We recommend using formal [benchmarking](../report-guidance.md#example-benchmark-function) instead**, and don't forget to analyse your methods and results in your report.
+**We recommend using formal [benchmarking](/report-guidance.md#example-benchmark-function) instead**, and don't forget to analyse your methods and results in your report.
 
 To run your implementation, type the following in the terminal.
 

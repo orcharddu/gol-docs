@@ -22,5 +22,5 @@ Please note that the rest of assignment will be introduced after reading week.
 [Watch here](https://web.microsoftstream.com/video/b5e8cf95-981c-4c26-8522-cc0210293d51)
 
 Also see this document which accompanies the video:
-[report guidance](golang/report-guidance.md)
+[report guidance](/report-guidance.md)
 :::
