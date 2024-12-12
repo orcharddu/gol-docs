@@ -1,8 +1,7 @@
 # Report Guidance
 
-::: tip Video Walkthrough of Report Component
+Video Walkthrough of Report Component
 [Watch here](https://web.microsoftstream.com/video/b5e8cf95-981c-4c26-8522-cc0210293d51)
-:::
 
 ## Parallel Implementation report, more details
 
